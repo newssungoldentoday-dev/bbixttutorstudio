@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Create Lesson — BlueBixt</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main>
+    <h2>Create Lesson</h2>
+    <form id="lesson-form">
+      <div class="form-row">
+        <div>
+          <label>Title
+            <input name="title" type="text" required>
+          </label>
+        </div>
+        <div>
+          <label>Grade
+            <input name="grade" type="text">
+          </label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div>
+          <label>Subject
+            <input name="subject" type="text">
+          </label>
+        </div>
+        <div>
+          <label>Duration
+            <input name="duration" type="text" placeholder="e.g., 45 min">
+          </label>
+        </div>
+      </div>
+
+      <label>Summary
+        <textarea name="summary"></textarea>
+      </label>
+
+      <label>Content
+        <textarea name="content"></textarea>
+      </label>
+
+      <div style="margin-top:12px">
+        <button class="btn" type="submit">Save Lesson</button>
+        <a href="index.html" class="btn" style="background:#94a3b8">Cancel</a>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

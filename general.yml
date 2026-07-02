@@ -1,0 +1,14 @@
+# general.yml - high-level configuration for BlueBixt Tutor STUDIO
+name: BlueBixt Academy Tutor STUDIO
+version: 0.1.0
+owner: newssungoldentoday-dev
+routes:
+  - path: /index.html
+    description: Landing page
+  - path: /lesson.html
+    description: Lesson authoring
+  - path: /lesson_plan.html
+    description: Lesson plan authoring
+storage:
+  type: localstorage # demo default
+  options: {}

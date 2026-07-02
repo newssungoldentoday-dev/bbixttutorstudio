@@ -1,0 +1,24 @@
+/* Basic styling for BlueBixt Tutor STUDIO */
+:root{
+  --accent:#2b6cb0;
+  --muted:#6b7280;
+  --bg:#f7fafc;
+  --max-width:900px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, Roboto, Arial, sans-serif; margin:0;background:var(--bg);color:#111}
+.site-header{background:#fff;border-bottom:1px solid #e6e6e6;padding:16px 24px;display:flex;align-items:center;justify-content:space-between}
+.site-header h1{margin:0;font-size:18px}
+.site-header nav a{margin-left:12px;color:var(--accent);text-decoration:none}
+main{max-width:var(--max-width);margin:28px auto;padding:0 16px}
+.hero{background:#fff;padding:24px;border-radius:8px;box-shadow:0 1px 2px rgba(0,0,0,0.04)}
+.actions{margin-top:16px}
+.btn{display:inline-block;padding:8px 14px;background:var(--accent);color:#fff;border-radius:6px;text-decoration:none;margin-right:8px}
+footer{max-width:var(--max-width);margin:28px auto;padding:8px 16px;color:var(--muted)}
+form{background:#fff;padding:16px;border-radius:8px;box-shadow:0 1px 2px rgba(0,0,0,0.04)}
+.form-row{display:flex;gap:12px;margin-bottom:12px}
+.form-row > *{flex:1}
+label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+input[type=text],textarea,select{width:100%;padding:8px;border:1px solid #e6e6e6;border-radius:6px}
+textarea{min-height:120px}
+.small{font-size:13px;color:var(--muted)}

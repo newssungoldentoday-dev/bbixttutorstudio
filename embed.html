@@ -1,0 +1,31 @@
+<!-- embed.html - an embeddable minimal view for the Lesson authoring widget -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BlueBixt Embed</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="embed-widget" style="padding:12px;max-width:600px;">
+    <h3>Quick Lesson Creator</h3>
+    <form id="embed-form">
+      <label>Title<input name="title" type="text" required></label>
+      <label>Grade<input name="grade" type="text"></label>
+      <label>Subject<input name="subject" type="text"></label>
+      <label>Duration<input name="duration" type="text" placeholder="e.g., 45 min"></label>
+      <button type="submit" class="btn">Save</button>
+    </form>
+  </div>
+  <script>
+    document.getElementById('embed-form').addEventListener('submit', function(e){
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(e.target).entries());
+      // Post message to parent window with lesson data (embedding host can listen)
+      window.parent.postMessage({type:'bbt.lesson.create', payload:data}, '*');
+      alert('Lesson data sent to host via postMessage (demo).');
+    });
+  </script>
+</body>
+</html>
