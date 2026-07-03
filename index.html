@@ -17,6 +17,7 @@
       <a href="lesson.html">New Lesson</a>
       <a href="lesson_plan.html">New Lesson Plan</a>
       <a href="embed.html">Embed</a>
+      <button id="view-window-btn" class="btn small-btn" title="View window">View 🪟</button>
     </nav>
   </header>
 
@@ -41,5 +42,35 @@
   <footer>
     <small>BlueBixt Academy Tutor STUDIO — Lesson & Lesson Plan authoring</small>
   </footer>
+
+  <!-- View Window Modal -->
+  <div id="view-window" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="view-window-title">
+      <header class="modal-header">
+        <h3 id="view-window-title">View — Lesson & Lesson Plan</h3>
+        <button id="view-close" class="close-btn" aria-label="Close">✕</button>
+      </header>
+      <div class="modal-body">
+        <section id="view-lesson">
+          <h4>Lesson</h4>
+          <div id="view-lesson-content" class="view-block">
+            <p class="small">No lesson available. Create one under School > Education Media &gt; Lesson.</p>
+          </div>
+        </section>
+        <section id="view-plan" style="margin-top:16px;">
+          <h4>Lesson Plan</h4>
+          <div id="view-plan-content" class="view-block">
+            <p class="small">No lesson plan available. Create one under Plan > School Plan &gt; Lessons &gt; Lesson Plan.</p>
+          </div>
+        </section>
+      </div>
+      <footer class="modal-footer">
+        <button id="view-open-lesson" class="btn">Open Lesson Editor</button>
+        <button id="view-open-plan" class="btn">Open Lesson Plan Editor</button>
+      </footer>
+    </div>
+  </div>
+
 </body>
 </html>
